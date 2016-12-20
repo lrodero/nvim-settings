@@ -46,7 +46,7 @@ set scrolloff=3
 set sidescrolloff=3
 
 syntax on
-colorscheme distinguished
+colorscheme jellybeans
 let airline_theme='papercolor'
 
 if has('gui_running')
