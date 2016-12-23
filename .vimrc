@@ -80,3 +80,7 @@ if !exists('g:airline_symbols')
 let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
+
+" Move visual blocks
+vnoremap J :m '>+1<CR>gv
+vnoremap K :m '<-2<CR>gv
