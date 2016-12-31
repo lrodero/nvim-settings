@@ -1,39 +1,39 @@
 [submodule ".vim/bundle/grep"]
-	path = .vim/bundle/grep
-	url = https://github.com/yegappan/grep.git
+  path = .vim/bundle/grep
+  url = https://github.com/yegappan/grep.git
 [submodule ".vim/bundle/indentline"]
-	path = .vim/bundle/indentline
-	url = https://github.com/yggdroot/indentline
+  path = .vim/bundle/indentline
+  url = https://github.com/yggdroot/indentline
 [submodule ".vim/bundle/jellybeans.vim"]
-	path = .vim/bundle/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim.git
+  path = .vim/bundle/jellybeans.vim
+  url = https://github.com/nanotech/jellybeans.vim.git
 [submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+  path = .vim/bundle/nerdtree
   url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/oceanic-next"]
   path = .vim/bundle/oceanic-next
   url = https://github.com/mhartington/oceanic-next.git
 [submodule ".vim/bundle/promptline.vim"]
-	path = .vim/bundle/promptline.vim
-	url = https://github.com/edkolev/promptline.vim
+  path = .vim/bundle/promptline.vim
+  url = https://github.com/edkolev/promptline.vim
 [submodule ".vim/bundle/tabular"]
-	path = .vim/bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
+  path = .vim/bundle/tabular
+  url = https://github.com/godlygeek/tabular.git
 [submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
+  path = .vim/bundle/vim-airline
+  url = https://github.com/vim-airline/vim-airline
 [submodule ".vim/bundle/vim-airline-themes"]
-	path = .vim/bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
+  path = .vim/bundle/vim-airline-themes
+  url = https://github.com/vim-airline/vim-airline-themes
 [submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+  path = .vim/bundle/vim-fugitive
   url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/vim-jdaddy"]
-	path = .vim/bundle/vim-jdaddy
+  path = .vim/bundle/vim-jdaddy
   url = https://github.com/tpope/vim-jdaddy.git
 [submodule ".vim/bundle/vim-scala"]
-	path = .vim/bundle/vim-scala
-	url = https://github.com/derekwyatt/vim-scala.git
+  path = .vim/bundle/vim-scala
+  url = https://github.com/derekwyatt/vim-scala.git
 [submodule ".bash/git-aware-prompt"]
-	path = .bash/git-aware-prompt
-	url = https://github.com/jimeh/git-aware-prompt
+  path = .bash/git-aware-prompt
+  url = https://github.com/jimeh/git-aware-prompt
