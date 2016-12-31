@@ -9,7 +9,10 @@
 	url = https://github.com/nanotech/jellybeans.vim.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+  url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/oceanic-next"]
+  path = .vim/bundle/oceanic-next
+  url = https://github.com/mhartington/oceanic-next.git
 [submodule ".vim/bundle/promptline.vim"]
 	path = .vim/bundle/promptline.vim
 	url = https://github.com/edkolev/promptline.vim
@@ -31,9 +34,6 @@
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule ".vim/bundle/vim-sensible"]
-	path = .vim/bundle/vim-sensible
-	url = https://github.com/tpope/vim-sensible.git
 [submodule ".bash/git-aware-prompt"]
 	path = .bash/git-aware-prompt
 	url = https://github.com/jimeh/git-aware-prompt
