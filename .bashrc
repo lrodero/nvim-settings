@@ -118,7 +118,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Ant
-export ANT_HOME=/home/lrodero/Software/apache-ant-1.9.6
+export ANT_HOME=/home/lrodero/Software/apache-ant-1.10.0
 export PATH=$ANT_HOME/bin:$PATH
 
 # Apache Maven
@@ -130,12 +130,12 @@ export PATH=$MVN_HOME/bin:$PATH
 # alias gvim='gvim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "set guifont=DejaVu\ Sans\ Mono\ 9" -c "syntax on" '
 
 # Scala
-export SCALA_HOME=/home/lrodero/Software/scala-2.11.7
+export SCALA_HOME=/home/lrodero/Software/scala-2.11.8
 #export SCALA_HOME=/home/lrodero/Software/scala-2.10.6
 export PATH=$SCALA_HOME/bin:$PATH
 
 # Sbt
-export SBT_HOME=/home/lrodero/Software/sbt-0.13.9
+export SBT_HOME=/home/lrodero/Software/sbt-launcher-packaging-0.13.13
 export PATH=$SBT_HOME/bin:$PATH
 
 # Required for having several ruby versions available, see
@@ -148,20 +148,20 @@ export PATH=$SBT_HOME/bin:$PATH
 #source /usr/local/share/chruby/auto.sh
 
 # Postgres 
-export POSTGRES_HOME=/home/postgres/Software/postgresql-9.5.1
+export POSTGRES_HOME=/home/postgres/Software/postgresql-9.5.3
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$POSTGRES_HOME/lib
 export PATH=$PATH:$POSTGRES_HOME/bin
 export MANPATH=$MANPATH:$POSTGRES_HOME/man
 
 # Spark
-export SPARK_HOME=/home/lrodero/Software/spark-1.6.0-bin-hadoop2.6
+export SPARK_HOME=/home/lrodero/Software/spark-2.1.0-bin-hadoop2.7
 export PATH=$PATH:$SPARK_HOME/bin
 
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
 export SWT_GTK3=0
 
 # Hadoop
-export HADOOP_HOME=/home/lrodero/Software/hadoop-2.6.4
+export HADOOP_HOME=/home/lrodero/Software/hadoop-2.7.3
 export PATH=$HADOOP_HOME/bin:$PATH
 export HADOOP_PREFIX=$HADOOP_HOME
 
