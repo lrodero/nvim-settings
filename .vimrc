@@ -45,9 +45,14 @@ set scrolloff=3
 " keep at least 3 lines left/right
 set sidescrolloff=3
 
+" required by OceanicNext color scheme
+if has('termguicolors')
+  set termguicolors
+endif
+
 syntax on
 colorscheme jellybeans
-let airline_theme='papercolor'
+let airline_theme='oceanicnext'
 
 if has('gui_running')
   set guioptions-=T " No toolbar
@@ -64,16 +69,6 @@ endif
 
 " indentline config
 let g:indentLine_char = '┊'
-
-" Syntastic config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-let g:syntastic_ignore_files = ['\m\c\.h$', '\m\.sbt$']
 
 let g:airline_powerline_fonts=1
 if !exists('g:airline_symbols')
