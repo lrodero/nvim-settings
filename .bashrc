@@ -148,7 +148,7 @@ export PATH=$SBT_HOME/bin:$PATH
 #source /usr/local/share/chruby/auto.sh
 
 # Postgres 
-export POSTGRES_HOME=/home/postgres/Software/postgresql-9.5.3
+export POSTGRES_HOME=/home/postgres/Software/postgresql-9.5.1
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$POSTGRES_HOME/lib
 export PATH=$PATH:$POSTGRES_HOME/bin
 export MANPATH=$MANPATH:$POSTGRES_HOME/man
