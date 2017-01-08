@@ -79,3 +79,13 @@ let g:airline_symbols.space = "\ua0"
 " Move visual blocks
 vnoremap J :m '>+1<CR>gv
 vnoremap K :m '<-2<CR>gv
+
+" Smartword configuration
+map w  <Plug>(smartword-w)
+map b  <Plug>(smartword-b)
+map e  <Plug>(smartword-e)
+map ge  <Plug>(smartword-ge)
+noremap ,w  w
+noremap ,b  b
+noremap ,e  e
+noremap ,ge  ge
