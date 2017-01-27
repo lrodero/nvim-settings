@@ -51,7 +51,8 @@ if has('termguicolors')
 endif
 
 syntax on
-colorscheme jellybeans
+"colorscheme jellybeans
+colorscheme seoul256
 let airline_theme='oceanicnext'
 
 if has('gui_running')
@@ -82,3 +83,10 @@ vnoremap K :m '<-2<CR>gv
 
 " Prevent plugins from hiding special chars (e.g. double quotes in JSON files)
 set conceallevel=0
+
+" Setting background color for seoul256 (dark):
+"   Range:   233 (darkest) ~ 239 (lightest)
+"   Default: 237
+let g:seoul256_background = 233
+colo seoul256
+
