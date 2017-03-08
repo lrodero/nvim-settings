@@ -90,3 +90,6 @@ set conceallevel=0
 let g:seoul256_background = 233
 colo seoul256
 
+" Enable mouse pointer, e.g. for resizing of window splits
+set mouse=a
+
