@@ -37,3 +37,9 @@
 [submodule ".bash/git-aware-prompt"]
   path = .bash/git-aware-prompt
   url = https://github.com/jimeh/git-aware-prompt
+[submodule "vim-jdaddy"]
+	path = vim-jdaddy
+	url = https://github.com/tpope/vim-jdaddy.git
+[submodule "vim-smartword"]
+	path = vim-smartword
+	url = https://github.com/kana/vim-smartword
