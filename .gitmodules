@@ -31,9 +31,12 @@
 [submodule ".vim/bundle/vim-scala"]
   path = .vim/bundle/vim-scala
   url = https://github.com/derekwyatt/vim-scala.git
-[submodule ".bash/git-aware-prompt"]
-  path = .bash/git-aware-prompt
-  url = https://github.com/jimeh/git-aware-prompt
+[submodule ".vim/bundle/vim-jdaddy"]
+	path = .vim/bundle/vim-jdaddy.vim
+	url = https://github.com/tpope/vim-jdaddy.git
 [submodule ".vim/bundle/seoul256.vim"]
 	path = .vim/bundle/seoul256.vim
 	url = https://github.com/junegunn/seoul256.vim.git
+[submodule ".bash/git-aware-prompt"]
+  path = .bash/git-aware-prompt
+  url = https://github.com/jimeh/git-aware-prompt
