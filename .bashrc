@@ -170,3 +170,10 @@ export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
+# conscript, required to get giter8, which in turn is needed to 
+# create play applications with command like sbt new playframework/play-scala-seed.g8
+# (see https://playframework.com/documentation/2.5.x/NewApplication)
+export CONSCRIPT_HOME=/home/lrodero/Software/conscript
+export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
+export PATH=$CONSCRIPT_HOME/bin:$PATH
+
