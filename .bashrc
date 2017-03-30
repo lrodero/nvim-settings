@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -84,6 +84,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -114,15 +117,15 @@ if ! shopt -oq posix; then
 fi
 
 # Java
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Ant
-export ANT_HOME=/home/lrodero/Software/apache-ant-1.10.0
+export ANT_HOME=/Users/lrodero/Software/apache-ant-1.10.0
 export PATH=$ANT_HOME/bin:$PATH
 
 # Apache Maven
-export MVN_HOME=/home/lrodero/Software/apache-maven-3.3.9
+export MVN_HOME=/Users/lrodero/Software/apache-maven-3.3.9
 export PATH=$MVN_HOME/bin:$PATH
 
 # Vim-Gvim NOT NEEDED, Vim and Gvim configurations are set in .vimrc
@@ -130,40 +133,16 @@ export PATH=$MVN_HOME/bin:$PATH
 # alias gvim='gvim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "set guifont=DejaVu\ Sans\ Mono\ 9" -c "syntax on" '
 
 # Scala
-export SCALA_HOME=/home/lrodero/Software/scala-2.11.8
+export SCALA_HOME=/Users/lrodero/Software/scala-2.11.6
 #export SCALA_HOME=/home/lrodero/Software/scala-2.10.6
 export PATH=$SCALA_HOME/bin:$PATH
 
 # Sbt
-export SBT_HOME=/home/lrodero/Software/sbt-launcher-packaging-0.13.13
+export SBT_HOME=/Users/lrodero/Software/sbt-launcher-packaging-0.13.13
 export PATH=$SBT_HOME/bin:$PATH
-
-# Required for having several ruby versions available, see
-# http://ryanbigg.com/2014/10/ubuntu-ruby-ruby-install-chruby-and-you
-# This was in turn required to install jekyll to create the blog
-# in github as defined in
-# https://help.github.com/articles/using-jekyll-with-pages/
-# as ruby with version >= 2 is required.
-#source /usr/local/share/chruby/chruby.sh
-#source /usr/local/share/chruby/auto.sh
-
-# Postgres 
-export POSTGRES_HOME=/home/postgres/Software/postgresql-9.5.1
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$POSTGRES_HOME/lib
-export PATH=$PATH:$POSTGRES_HOME/bin
-export MANPATH=$MANPATH:$POSTGRES_HOME/man
-
-# Spark
-export SPARK_HOME=/home/lrodero/Software/spark-2.1.0-bin-hadoop2.7
-export PATH=$PATH:$SPARK_HOME/bin
 
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
 export SWT_GTK3=0
-
-# Hadoop
-export HADOOP_HOME=/home/lrodero/Software/hadoop-2.7.3
-export PATH=$HADOOP_HOME/bin:$PATH
-export HADOOP_PREFIX=$HADOOP_HOME
 
 # git-aware prompt
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
@@ -173,7 +152,21 @@ export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]
 # conscript, required to get giter8, which in turn is needed to 
 # create play applications with command like sbt new playframework/play-scala-seed.g8
 # (see https://playframework.com/documentation/2.5.x/NewApplication)
-export CONSCRIPT_HOME=/home/lrodero/Software/conscript
+export CONSCRIPT_HOME=/Users/lrodero/Software/conscript
 export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
 export PATH=$CONSCRIPT_HOME/bin:$PATH
+
+# So virtualenvwrapper works (see instructions at
+# http://stackoverflow.com/questions/12232421/virtualenvwrapper-commands-arent-working
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+if [ -f ~/.bash/git-completion.bash ]; then
+    . ~/.bash/git-completion.bash
+fi
 

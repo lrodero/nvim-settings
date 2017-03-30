@@ -7,19 +7,19 @@ autocmd vimenter * NERDTree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Window navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 map <silent> <F2> :NERDTreeToggle<CR>
 map <silent> <F3> :NERDTreeFind<CR>
 
 if has('nvim')
-  tnoremap <silent> <A-Up> <C-\><C-n><C-w>k
-  tnoremap <silent> <A-Down> <C-\><C-n><C-w>j
-  tnoremap <silent> <A-Left> <C-\><C-n><C-w>h
-  tnoremap <silent> <A-Right> <C-\><C-n><C-w>l
+  tnoremap <silent> <C-k> <C-\><C-n><C-w>k
+  tnoremap <silent> <C-j> <C-\><C-n><C-w>j
+  tnoremap <silent> <C-h> <C-\><C-n><C-w>h
+  tnoremap <silent> <C-l> <C-\><C-n><C-w>l
 endif
 
 set expandtab
