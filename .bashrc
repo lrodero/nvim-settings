@@ -133,7 +133,8 @@ export PATH=$MVN_HOME/bin:$PATH
 # alias gvim='gvim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "set guifont=DejaVu\ Sans\ Mono\ 9" -c "syntax on" '
 
 # Scala
-export SCALA_HOME=/Users/lrodero/Software/scala-2.11.6
+export SCALA_HOME=/Users/lrodero/Software/scala-2.11.8
+#export SCALA_HOME=/Users/lrodero/Software/scala-2.11.6
 #export SCALA_HOME=/home/lrodero/Software/scala-2.10.6
 export PATH=$SCALA_HOME/bin:$PATH
 
