@@ -141,6 +141,8 @@ export PATH=$SCALA_HOME/bin:$PATH
 # Sbt
 export SBT_HOME=/Users/lrodero/Software/sbt-launcher-packaging-0.13.13
 export PATH=$SBT_HOME/bin:$PATH
+# For certain compilation tasks we need up to 2G of mem available
+export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M"
 
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
 export SWT_GTK3=0
