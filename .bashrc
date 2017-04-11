@@ -173,3 +173,6 @@ if [ -f ~/.bash/git-completion.bash ]; then
     . ~/.bash/git-completion.bash
 fi
 
+export CONSUL_HOME=/Users/lrodero/Software/consul_0.8.0
+export PATH=$CONSUL_HOME:$PATH
+
