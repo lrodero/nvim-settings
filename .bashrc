@@ -165,6 +165,9 @@ export HADOOP_HOME=/home/lrodero/Software/hadoop-2.7.3
 export PATH=$HADOOP_HOME/bin:$PATH
 export HADOOP_PREFIX=$HADOOP_HOME
 
+# Cassandra
+export PATH=/home/lrodero/Software/apache-cassandra-3.10/bin:$PATH
+
 # git-aware prompt
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
