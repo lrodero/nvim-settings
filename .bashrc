@@ -148,6 +148,9 @@ export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
 export SWT_GTK3=0
 
+# Cassandra
+export PATH=/Users/lrodero/Software/apache-cassandra-3.10/bin:$PATH
+
 # git-aware prompt
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
