@@ -151,6 +151,9 @@ export SWT_GTK3=0
 # Cassandra
 export PATH=/Users/lrodero/Software/apache-cassandra-3.10/bin:$PATH
 
+# Spark
+export PATH=/Users/lrodero/Software/spark-2.1.1-bin-hadoop2.7/bin:$PATH
+
 # git-aware prompt
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
