@@ -93,3 +93,7 @@ colo seoul256
 " Enable mouse pointer, e.g. for resizing of window splits
 set mouse=a
 
+" To setup ensime-vim plugin
+autocmd BufWritePost *.scala silent :EnTypeCheck
+nnoremap <localleader>t :EnTypeCheck<CR>
+
