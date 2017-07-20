@@ -38,6 +38,12 @@ set number
 " highlight current line
 set cursorline
 
+" highlight searches
+set hlsearch
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 set encoding=utf-8
 
 " keep at least 3 lines above/below
