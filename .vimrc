@@ -96,4 +96,5 @@ set mouse=a
 " To setup ensime-vim plugin
 autocmd BufWritePost *.scala silent :EnTypeCheck
 nnoremap <localleader>t :EnTypeCheck<CR>
+let ensime_server_v2=1
 
