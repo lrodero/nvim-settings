@@ -93,7 +93,7 @@ set conceallevel=0
 " Setting background color for seoul256 (dark):
 "   Range:   233 (darkest) ~ 239 (lightest)
 "   Default: 237
-let g:seoul256_background = 233
+let g:seoul256_background = 237
 colo seoul256
 
 " Enable mouse pointer, e.g. for resizing of window splits
