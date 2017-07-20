@@ -38,6 +38,12 @@ set number
 " highlight current line
 set cursorline
 
+" highlight searches
+set hlsearch
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 set encoding=utf-8
 
 " keep at least 3 lines above/below
@@ -87,9 +93,30 @@ set conceallevel=0
 " Setting background color for seoul256 (dark):
 "   Range:   233 (darkest) ~ 239 (lightest)
 "   Default: 237
-let g:seoul256_background = 233
+let g:seoul256_background = 237
 colo seoul256
 
 " Enable mouse pointer, e.g. for resizing of window splits
 set mouse=a
+
+" To setup ensime-vim plugin
+autocmd BufWritePost *.scala silent :EnTypeCheck
+nnoremap <localleader>t :EnTypeCheck<CR>
+let ensime_server_v2=1
+
+" Syntastic setup
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_enable_signs = 1
+"let g:syntastic_error_symbol = "\u2717"
+"let g:syntastic_warning_symbol = "\u26A0"
+
+let g:syntastic_scala_checkers = ['ensime']
 
