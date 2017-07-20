@@ -183,3 +183,7 @@ fi
 export CONSUL_HOME=/Users/lrodero/Software/consul_0.8.0
 export PATH=$CONSUL_HOME:$PATH
 
+# To fix problem with vim not catching some keyboard combinations (Ctrl-w + s)
+# See https://stackoverflow.com/questions/13648237/ctrls-horizontal-split-not-working-with-command-t-in-vim/13648667#13648667
+stty start undef stop undef
+
