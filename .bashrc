@@ -113,10 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Java
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
-
 # Ant
 export ANT_HOME=/home/lrodero/Software/apache-ant-1.10.0
 export PATH=$ANT_HOME/bin:$PATH
