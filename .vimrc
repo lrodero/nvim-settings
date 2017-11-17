@@ -15,13 +15,6 @@ nmap <silent> <A-Right> :wincmd l<CR>
 map <silent> <F2> :NERDTreeToggle<CR>
 map <silent> <F3> :NERDTreeFind<CR>
 
-if has('nvim')
-  tnoremap <silent> <A-Up> <C-\><C-n><C-w>k
-  tnoremap <silent> <A-Down> <C-\><C-n><C-w>j
-  tnoremap <silent> <A-Left> <C-\><C-n><C-w>h
-  tnoremap <silent> <A-Right> <C-\><C-n><C-w>l
-endif
-
 set expandtab
 set tabstop=2
 set shiftwidth=2
