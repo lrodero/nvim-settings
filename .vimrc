@@ -6,18 +6,25 @@ autocmd vimenter * NERDTree
 " Close NERDTree if it's the only window left open:
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Window navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-
 map <silent> <F2> :NERDTreeToggle<CR>
 map <silent> <F3> :NERDTreeFind<CR>
 
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+:tnoremap <A-h> <C-\><C-N><C-w>h
+:tnoremap <A-j> <C-\><C-N><C-w>j
+:tnoremap <A-k> <C-\><C-N><C-w>k
+:tnoremap <A-l> <C-\><C-N><C-w>l
+:inoremap <A-h> <C-\><C-N><C-w>h
+:inoremap <A-j> <C-\><C-N><C-w>j
+:inoremap <A-k> <C-\><C-N><C-w>k
+:inoremap <A-l> <C-\><C-N><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l
 
 " watch for file changes
 set autoread
@@ -86,7 +93,7 @@ set conceallevel=0
 " Setting background color for seoul256 (dark):
 "   Range:   233 (darkest) ~ 239 (lightest)
 "   Default: 237
-let g:seoul256_background = 237
+let g:seoul256_background = 235
 colo seoul256
 
 " Enable mouse pointer, e.g. for resizing of window splits
