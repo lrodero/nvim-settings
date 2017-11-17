@@ -124,6 +124,10 @@ export PATH=$MVN_HOME/bin:$PATH
 # Vim-Gvim NOT NEEDED, Vim and Gvim configurations are set in .vimrc
 # alias vim='vim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "syntax on"'
 # alias gvim='gvim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "set guifont=DejaVu\ Sans\ Mono\ 9" -c "syntax on" '
+#Neovim true color support
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
+#Neovim cursor shape support
+export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 # Scala
 export SCALA_HOME=/home/lrodero/Software/scala-2.12.2

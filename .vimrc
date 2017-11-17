@@ -13,6 +13,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+" Moving around windows using Alt key
 :tnoremap <A-h> <C-\><C-N><C-w>h
 :tnoremap <A-j> <C-\><C-N><C-w>j
 :tnoremap <A-k> <C-\><C-N><C-w>k
@@ -95,6 +96,27 @@ set conceallevel=0
 "   Default: 237
 let g:seoul256_background = 235
 colo seoul256
+
+" Set terminal colors
+let g:terminal_color_0  = '#2e3436'
+let g:terminal_color_1  = '#cc0000'
+let g:terminal_color_2  = '#4e9a06'
+let g:terminal_color_3  = '#c4a000'
+let g:terminal_color_4  = '#3465a4'
+let g:terminal_color_5  = '#75507b'
+let g:terminal_color_6  = '#0b939b'
+let g:terminal_color_7  = '#d3d7cf'
+let g:terminal_color_8  = '#555753'
+let g:terminal_color_9  = '#ef2929'
+let g:terminal_color_10 = '#8ae234'
+let g:terminal_color_11 = '#fce94f'
+let g:terminal_color_12 = '#729fcf'
+let g:terminal_color_13 = '#ad7fa8'
+let g:terminal_color_14 = '#00f5e9'
+let g:terminal_color_15 = '#eeeeec'
+
+hi Normal ctermbg=NONE guibg=NONE
+hi NonText ctermbg=NONE guibg=NONE
 
 " Enable mouse pointer, e.g. for resizing of window splits
 set mouse=a
