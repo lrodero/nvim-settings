@@ -94,7 +94,7 @@ set conceallevel=0
 " Setting background color for seoul256 (dark):
 "   Range:   233 (darkest) ~ 239 (lightest)
 "   Default: 237
-let g:seoul256_background = 235
+let g:seoul256_background = 233
 colo seoul256
 
 " Set terminal colors
@@ -115,8 +115,8 @@ let g:terminal_color_13 = '#ad7fa8'
 let g:terminal_color_14 = '#00f5e9'
 let g:terminal_color_15 = '#eeeeec'
 
-hi Normal ctermbg=NONE guibg=NONE
-hi NonText ctermbg=NONE guibg=NONE
+" hi Normal ctermbg=NONE guibg=NONE
+" hi NonText ctermbg=NONE guibg=NONE
 
 " Enable mouse pointer, e.g. for resizing of window splits
 set mouse=a
