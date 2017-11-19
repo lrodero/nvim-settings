@@ -121,6 +121,10 @@ export PATH=$ANT_HOME/bin:$PATH
 export MVN_HOME=/home/lrodero/Software/apache-maven-3.3.9
 export PATH=$MVN_HOME/bin:$PATH
 
+# JavaCard
+export JC_HOME=/home/lrodero/Software/java_card_kit-2.2.2/java_card_kit-2_2_2/
+export PATH=$JC_HOME/bin:$PATH
+
 # Vim-Gvim NOT NEEDED, Vim and Gvim configurations are set in .vimrc
 # alias vim='vim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "syntax on"'
 # alias gvim='gvim -c "set expandtab" -c "set tabstop=4" -c "set shiftwidth=4" -c "set nu" -c "set guifont=DejaVu\ Sans\ Mono\ 9" -c "syntax on" '
