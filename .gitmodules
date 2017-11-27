@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/grep"]
   path = .vim/bundle/grep
   url = https://github.com/yegappan/grep.git
-[submodule ".vim/bundle/indentline"]
-  path = .vim/bundle/indentline
-  url = https://github.com/yggdroot/indentline
 [submodule ".vim/bundle/jellybeans.vim"]
   path = .vim/bundle/jellybeans.vim
   url = https://github.com/nanotech/jellybeans.vim.git
