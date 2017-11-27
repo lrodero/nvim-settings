@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/promptline.vim"]
   path = .vim/bundle/promptline.vim
   url = https://github.com/edkolev/promptline.vim
-[submodule ".vim/bundle/tabular"]
-  path = .vim/bundle/tabular
-  url = https://github.com/godlygeek/tabular.git
 [submodule ".vim/bundle/vim-airline"]
   path = .vim/bundle/vim-airline
   url = https://github.com/vim-airline/vim-airline
