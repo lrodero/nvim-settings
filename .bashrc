@@ -113,6 +113,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Java
+export JAVA_HOME=/usr/lib/jvm/default-java
+export PATH=$JAVA_HOME/bin:$PATH
+
 # Ant
 export ANT_HOME=/home/lrodero/Software/apache-ant-1.10.0
 export PATH=$ANT_HOME/bin:$PATH
@@ -122,7 +126,7 @@ export MVN_HOME=/home/lrodero/Software/apache-maven-3.3.9
 export PATH=$MVN_HOME/bin:$PATH
 
 # JavaCard
-export JC_HOME=/home/lrodero/Software/java_card_kit-2.2.2/java_card_kit-2_2_2/
+export JC_HOME=/home/lrodero/Software/java_card_kit-2.2.2/java_card_kit-2_2_2
 export PATH=$JC_HOME/bin:$PATH
 
 # Vim-Gvim NOT NEEDED, Vim and Gvim configurations are set in .vimrc
