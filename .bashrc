@@ -188,3 +188,7 @@ export CONSCRIPT_HOME=/home/lrodero/Software/conscript
 export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
 export PATH=$CONSCRIPT_HOME/bin:$PATH
 
+# Install Ruby Gems to ~/Software/gems'
+# (following the instructions at https://jekyllrb.com/docs/installation/#requirements)
+export GEM_HOME=/home/lrodero/Software/gems
+export PATH=/home/lrodero/Software/gems/bin:$PATH
