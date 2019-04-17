@@ -142,9 +142,9 @@ export SCALA_HOME=/home/lrodero/Software/scala-2.12.2
 #export SCALA_HOME=/home/lrodero/Software/scala-2.10.6
 export PATH=$SCALA_HOME/bin:$PATH
 
-# Sbt
-export SBT_HOME=/home/lrodero/Software/sbt-launcher-packaging-0.13.13
-export PATH=$SBT_HOME/bin:$PATH
+# Sbt // Not needed, we use the sbt package in Debian
+#export SBT_HOME=/home/lrodero/Software/sbt-launcher-packaging-0.13.13
+#export PATH=$SBT_HOME/bin:$PATH
 
 # Required for having several ruby versions available, see
 # http://ryanbigg.com/2014/10/ubuntu-ruby-ruby-install-chruby-and-you
