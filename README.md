@@ -1,5 +1,5 @@
 # work-settings
-My  work settings, so far for linux `bash` and [`neovim`](https://neovim.io/).
+My  work settings, so far for linux `bash` and `vim`
 
 ## Install
 Most of the contents of this repo are in fact git _submodules_, so to get its full contents you should run:
