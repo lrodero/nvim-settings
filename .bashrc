@@ -165,7 +165,7 @@ export PATH=$PATH:$POSTGRES_HOME/bin
 export MANPATH=$MANPATH:$POSTGRES_HOME/man
 
 # Spark
-export SPARK_HOME=/home/lrodero/Software/spark-2.4.4-bin-hadoop2.7
+export SPARK_HOME=/home/lrodero/Software/spark-2.4.5-bin-hadoop2.7
 export PATH=$PATH:$SPARK_HOME/bin
 
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
