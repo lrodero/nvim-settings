@@ -164,17 +164,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$POSTGRES_HOME/lib
 export PATH=$PATH:$POSTGRES_HOME/bin
 export MANPATH=$MANPATH:$POSTGRES_HOME/man
 
-# Spark
-export SPARK_HOME=/home/lrodero/Software/spark-2.4.5-bin-hadoop2.7
-export PATH=$PATH:$SPARK_HOME/bin
-
 # For eclipse using the style configuration defined in $HOME/.gtkrc-2.0
 export SWT_GTK3=0
-
-# Hadoop
-export HADOOP_HOME=/home/lrodero/Software/hadoop-2.7.3
-export PATH=$HADOOP_HOME/bin:$PATH
-export HADOOP_PREFIX=$HADOOP_HOME
 
 # Cassandra
 export PATH=/home/lrodero/Software/apache-cassandra-3.10/bin:$PATH
@@ -182,7 +173,7 @@ export PATH=/home/lrodero/Software/apache-cassandra-3.10/bin:$PATH
 # git-aware prompt
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
-export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\] "
 
 # conscript, required to get giter8, which in turn is needed to 
 # create play applications with command like sbt new playframework/play-scala-seed.g8
